@@ -26,3 +26,11 @@ Jako odpowiedź do zadania wstawić screenshot z network, powinien on wyglądać
 
 Jako odpowiedź do zadania wstawić screenshot ze strony, powinien on wyglądać tak:
 ![image](https://github.com/zapjur/JPWP_Tasks/assets/62191962/2ef62883-2263-4c08-8db2-3f11dded118e)
+
+# Zadanie 3
+### Dodawanie tasków
+- Dodać endpoint PostMapping w backend w controllers/TaskController.java
+- Wysłać zapytanie na ten endpoint z frontend za pomocą axios z axios_helper.js. (uzupełnić funkcje handleAddTask w App.js)
+
+Jako odpowiedź do zadania wstawić screenshot ze strony z dodanym taskiem, powinien on wyglądać np. tak:
+![image](https://github.com/zapjur/JPWP_Tasks/assets/62191962/a07e6982-d6eb-4519-8426-a03ce080108d)
