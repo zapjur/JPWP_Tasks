@@ -19,3 +19,10 @@ GRANT ALL PRIVILEGES ON DATABASE backenddb TO backend;
 Jako odpowiedź do zadania wstawić screenshot z network, powinien on wyglądać tak:
 ![image](https://github.com/zapjur/JPWP_Tasks/assets/62191962/34be935a-d78a-4bcc-aef9-57f813c50258)
 
+# Zadanie 2
+### Wyświetlanie tasków 
+- Użyć do tego TaskPanel.js z folderu components
+- Do Button dodać ikony z MaterialUI: https://mui.com/material-ui/material-icons/
+
+Jako odpowiedź do zadania wstawić screenshot ze strony, powinien on wyglądać tak:
+![image](https://github.com/zapjur/JPWP_Tasks/assets/62191962/2ef62883-2263-4c08-8db2-3f11dded118e)
