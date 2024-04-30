@@ -11,69 +11,26 @@ function App() {
 
   useEffect(() => {
     const fetchTasks = async () => {
-      const response = await request('get', '/tasks');
-      if (response.status === 200) {
-        setTasks(response.data);
-      } else {
-        console.error('Failed to fetch tasks');
-      }
+      //YOUR CODE HERE
     };
 
     fetchTasks();
-  }, []);
+  }, ); // Think about what should trigger this effect
 
   const handleAddTask = async (newTask) => {
-    try {
-      const response = await request('post', '/tasks', newTask);
-      if (response.status === 200) {
-        setTasks([...tasks, response.data]);
-        handleClose();
-      } else {
-        console.error('Failed to add task');
-      }
-    } catch (error) {
-      console.error('Error adding task:', error);
-    }
+    //YOUR CODE HERE
   };
 
   const handleDeleteTask = async (id) => {
-    try {
-      const response = await request('delete', `/tasks/${id}`);
-      if (response.status === 200) {
-        setTasks(tasks.filter(task => task.id !== id));
-      } else {
-        console.error('Failed to delete task');
-      }
-    } catch (error) {
-      console.error('Error deleting task:', error);
-    }
+    //YOUR CODE HERE
   };
 
   const handleChangeTaskStatus = async (id) => {
-    try {
-      const task = tasks.find(task => task.id === id);
-      const response = await request('put', `/tasks/${id}`);
-      if (response.status === 200) {
-        setTasks(tasks.map(task => task.id === id ? response.data : task));
-      } else {
-        console.error('Failed to change task status');
-      }
-    } catch (error) {
-      console.error('Error changing task status:', error);
-    }
+    //YOUR CODE HERE
   }
 
   const handleEditTask = async (id, updatedTask) => {
-    try {
-      const response = await request('put', `/tasks/edit/${id}`, updatedTask);
-      if (response.status === 200) {
-        setTasks(tasks.map(task => (task.id === id ? {...task, ...updatedTask} : task)));
-      } else {
-        console.error('Failed to edit task');
-      }
-    } catch (error) {
-      console.error('Error editing task:', error);
-    }
+    //YOUR CODE HERE
   };
 
 
@@ -88,13 +45,7 @@ function App() {
             Add task
           </Button>
         </div>
-        {tasks.map(task => (
-            <TaskPanel key={task.id} task={task}
-                       handleDeleteTask={handleDeleteTask}
-                       handleChangeTaskStatus={handleChangeTaskStatus}
-                       handleEditTask={handleEditTask}
-            />
-        ))}
+        {/*YOUR CODE HERE*/}
         <AddTaskForm open={open} handleClose={handleClose} handleAddTask={handleAddTask} />
       </div>
   );

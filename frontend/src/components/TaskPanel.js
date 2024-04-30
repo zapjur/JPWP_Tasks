@@ -2,8 +2,6 @@ import * as React from 'react';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
-import EditIcon from '@mui/icons-material/Edit';
-import DeleteForeverIcon from '@mui/icons-material/DeleteForever';
 import CheckBoxOutlineBlankIcon from '@mui/icons-material/CheckBoxOutlineBlank';
 import CheckBoxIcon from '@mui/icons-material/CheckBox';
 import { Button, CardActions } from '@mui/material';
@@ -20,8 +18,8 @@ function TaskPanel({ task, handleDeleteTask, handleChangeTaskStatus, handleEditT
 
     return (
         <>
-        <Card sx={{ display: 'flex', width: 1000}}>
-            <CardContent sx={{ flex: 1 }}>
+        <Card>
+            <CardContent>
                 <Typography gutterBottom variant="h5" component="div">
                     {task.title}
                 </Typography>
@@ -29,16 +27,14 @@ function TaskPanel({ task, handleDeleteTask, handleChangeTaskStatus, handleEditT
                     {task.description}
                 </Typography>
             </CardContent>
-            <CardActions sx={{ flexDirection: 'row', justifyContent: 'space-around', padding: '10px' }}>
+            <CardActions>
                 <Button size="small" color="success" onClick={() => handleChangeTaskStatus(task.id)}>
                     {task.done ? <CheckBoxIcon/> : <CheckBoxOutlineBlankIcon/> }
                 </Button>
-                <Button size="small" color="primary" sx = {{ gap: 1 }} onClick={handleEditOpen}>
-                    <EditIcon/>
+                <Button size="small" color="primary" onClick={handleEditOpen}>
                     Edit
                 </Button>
-                <Button size="small" color="error" sx = {{ gap: 1 }} onClick={() => handleDeleteTask(task.id)}>
-                    <DeleteForeverIcon/>
+                <Button size="small" color="error" onClick={() => handleDeleteTask(task.id)}>
                     Delete
                 </Button>
             </CardActions>
