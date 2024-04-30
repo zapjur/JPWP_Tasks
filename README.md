@@ -34,17 +34,23 @@ Ten tutorial pokaże, jak zainstalować i skonfigurować PostgreSQL na systemach
 ## Konfiguracja bazy danych
 
 1. Zaloguj się do PostgreSQL:
-- Na Windows i macOS użyj polecenia `psql -U postgres`.
+- Na Windows i macOS użyj polecenia ```psql -U postgres```.
 - Na Linux: 
   ```
   sudo -u postgres psql
   ```
 2. Utwórz nową bazę danych i użytkownika:
+   ```
    CREATE DATABASE backenddb;
+   ```
+   ```
    CREATE USER backend WITH ENCRYPTED PASSWORD 'backend';
+   ```
+   ```
    GRANT ALL PRIVILEGES ON DATABASE backenddb TO backend;
+   ```
    
-4. Wyjdź z psql: \q
+4. Wyjdź z psql: `\q`
 
 
 # Zadanie 1
