@@ -21,8 +21,9 @@ Jako odpowiedź do zadania wstawić screenshot z network, powinien on wyglądać
 
 # Zadanie 2
 ### Wyświetlanie tasków 
-- Użyć do tego TaskPanel.js z folderu components
+- Użyć do tego TaskPanel.js z folderu components (TaskPanel będzie wymagał podania mu 3 funkcji, które będą do uzupełnienia później. Na tym etapie należy przekazać te funkcje zgodnie z ich nazwami)
 - Do Button dodać ikony z MaterialUI: https://mui.com/material-ui/material-icons/
+- Za pomocą sx zmodyfikować komponenty z materialUI, tak aby wyglądały jak na screenie poniżej
 
 Jako odpowiedź do zadania wstawić screenshot ze strony, powinien on wyglądać tak:
 ![image](https://github.com/zapjur/JPWP_Tasks/assets/62191962/2ef62883-2263-4c08-8db2-3f11dded118e)
