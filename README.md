@@ -19,22 +19,28 @@ Ten tutorial pokaże, jak zainstalować i skonfigurować PostgreSQL na systemach
 
 ### Linux (Debian/Ubuntu)
 
-1. Otwórz terminal i zaktualizuj listę pakietów: ```sudo apt update```
-2. Zainstaluj PostgreSQL: ```sudo apt install postgresql postgresql-contrib```
-3. Sprawdź, czy serwer bazy danych działa: ```sudo systemctl status postgresql```
+1. Otwórz terminal i zaktualizuj listę pakietów:
+   ```sudo apt update```
+2. Zainstaluj PostgreSQL:
+   ```sudo apt install postgresql postgresql-contrib```
+3. Sprawdź, czy serwer bazy danych działa:
+   ```sudo systemctl status postgresql```
 
 
 ### macOS
 
 1. Najprostszą metodą instalacji jest użycie Homebrew. Jeśli nie masz Homebrew, zainstaluj go zgodnie z instrukcjami na [brew.sh](https://brew.sh/).
-2. Zainstaluj PostgreSQL za pomocą Homebrew: ```brew install postgresql```
-3. Po instalacji uruchom serwer bazy danych: ```brew services start postgresql```
+2. Zainstaluj PostgreSQL za pomocą Homebrew:
+   ```brew install postgresql```
+3. Po instalacji uruchom serwer bazy danych:
+   ```brew services start postgresql```
 
 
 ## Konfiguracja bazy danych
 
 1. Zaloguj się do PostgreSQL:
-- Na Windows i macOS użyj polecenia ```psql -U postgres```.
+- Na Windows i macOS użyj polecenia
+  ```psql -U postgres```.
 - Na Linux: 
   ```
   sudo -u postgres psql
