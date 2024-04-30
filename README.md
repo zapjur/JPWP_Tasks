@@ -2,14 +2,50 @@
 
 # Przygotowanie środowiska
 
-Instalacja postgresql: https://www.postgresql.org/download/
+# Instalacja i konfiguracja PostgreSQL dla Spring Boot
 
-MacOS:  brew services start postgresql   
-       
-psql postgres  
-CREATE DATABASE backenddb;
-CREATE USER backend WITH ENCRYPTED PASSWORD 'backend';
-GRANT ALL PRIVILEGES ON DATABASE backenddb TO backend;
+Ten tutorial pokaże, jak zainstalować i skonfigurować PostgreSQL na systemach Windows, Linux oraz macOS i jak przygotować środowisko do pracy z aplikacją Spring Boot.
+
+## Instalacja PostgreSQL
+
+### Windows
+
+1. Pobierz instalator PostgreSQL z [oficjalnej strony](https://www.postgresql.org/download/windows/).
+2. Uruchom pobrany plik i postępuj zgodnie z instrukcjami instalatora.
+3. Wybierz komponenty do instalacji. Zazwyczaj wystarczy serwer bazy danych i narzędzia komend.
+4. Zaznacz odpowiednią lokalizację instalacji.
+5. Wybierz port (domyślnie 5432) i hasło dla superużytkownika `postgres`.
+6. Zakończ instalację i upewnij się, że serwer bazy danych jest uruchomiony.
+
+### Linux (Debian/Ubuntu)
+
+1. Otwórz terminal i zaktualizuj listę pakietów: sudo apt update
+2. Zainstaluj PostgreSQL: sudo apt install postgresql postgresql-contrib
+3. Sprawdź, czy serwer bazy danych działa: sudo systemctl status postgresql
+
+
+### macOS
+
+1. Najprostszą metodą instalacji jest użycie Homebrew. Jeśli nie masz Homebrew, zainstaluj go zgodnie z instrukcjami na [brew.sh](https://brew.sh/).
+2. Zainstaluj PostgreSQL za pomocą Homebrew: brew install postgresql
+3. Po instalacji uruchom serwer bazy danych: brew services start postgresql
+
+
+## Konfiguracja bazy danych
+
+1. Zaloguj się do PostgreSQL:
+- Na Windows i macOS użyj polecenia `psql -U postgres`.
+- Na Linux: 
+  ```
+  sudo -u postgres psql
+  ```
+2. Utwórz nową bazę danych i użytkownika:
+   CREATE DATABASE backenddb;
+   CREATE USER backend WITH ENCRYPTED PASSWORD 'backend';
+   GRANT ALL PRIVILEGES ON DATABASE backenddb TO backend;
+   
+4. Wyjdź z psql: \q
+
 
 # Zadanie 1
 ### Pobieranie tasków z bazy danych
