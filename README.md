@@ -113,7 +113,7 @@ Npm to menedżer pakietów dla języka programowania JavaScript, który jest dom
 
 Aby uruchomić projekt, wykonaj następujące kroki:
 
-1. Sklonuj repozytorium przy użyciu poniższej komendy: `git clone <URL_REPOZYTORIUM>` Zastąp `<URL_REPOZYTORIUM>` rzeczywistym adresem URL repozytorium.)
+1. Sklonuj repozytorium przy użyciu poniższej komendy: `git clone <URL_REPOZYTORIUM>` (Zastąp `<URL_REPOZYTORIUM>` rzeczywistym adresem URL repozytorium.)
 2. Otwórz terminal i przejdź do folderu `frontend`. Zainstaluj zależności projektu za pomocą komendy: `npm install`
 3. Następnie otwórz nowe okno terminala i przejdź do folderu `backend`. Zbuduj projekt przy użyciu Mavena: `mvn clean install`
 4. Aby uruchomić frontend, w terminalu w folderze `frontend` wpisz komendę: `npm start` Spowoduje to uruchomienie strony na `localhost:3030`.
