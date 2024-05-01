@@ -58,6 +58,33 @@ Ten tutorial pokaże, jak zainstalować i skonfigurować PostgreSQL na systemach
    
 4. Wyjdź z psql: `\q`
 
+# Instalacja Apache Maven
+
+Apache Maven to narzędzie do zarządzania projektem i zrozumienia jego cyklu życia. Poniżej znajduje się instrukcja instalacji Mavena na systemach Windows, Linux i macOS.
+
+## Instalacja Apache Maven
+
+### Windows
+
+1. Pobierz binarną wersję Apache Maven ze strony [Apache Maven Project](https://maven.apache.org/download.cgi).
+2. Rozpakuj archiwum w lokalizacji, którą chcesz używać na stałe.
+3. Dodaj lokalizację katalogu `bin` do zmiennej środowiskowej `PATH`:
+   - Kliknij prawym przyciskiem myszy na ikonę `Ten PC` i wybierz `Właściwości`.
+   - Kliknij `Zaawansowane ustawienia systemu`, następnie `Zmienne środowiskowe`.
+   - W sekcji `Zmienne systemowe` znajdź i edytuj `PATH`, dodając ścieżkę do katalogu `bin` Mavena.
+
+### Linux (Debian/Ubuntu)
+
+1. Maven można zainstalować za pomocą menedżera pakietów: `sudo apt update`, `sudo apt install maven`
+2. Po instalacji sprawdź wersję Mavena, aby upewnić się, że instalacja przebiegła pomyślnie: `mvn -version`
+   
+
+### macOS
+
+1. Najprostszym sposobem na zainstalowanie Mavena jest użycie Homebrew. Jeśli nie masz Homebrew, zainstaluj go zgodnie z instrukcjami na [brew.sh](https://brew.sh/).
+2. Zainstaluj Mavena za pomocą Homebrew: `brew install maven`
+3. Po instalacji sprawdź wersję Mavena: `mvn -version`
+
 
 # Zadanie 1
 ### Pobieranie tasków z bazy danych
