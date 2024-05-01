@@ -85,6 +85,44 @@ Apache Maven to narzędzie do zarządzania projektem i zrozumienia jego cyklu ż
 2. Zainstaluj Mavena za pomocą Homebrew: `brew install maven`
 3. Po instalacji sprawdź wersję Mavena: `mvn -version`
 
+# Instalacja npm (Node Package Manager)
+
+Npm to menedżer pakietów dla języka programowania JavaScript, który jest domyślnym menedżerem pakietów dla platformy Node.js. Poniżej znajduje się instrukcja instalacji npm na systemach Windows, Linux i macOS.
+
+## Instalacja npm
+
+### Windows
+
+1. Pobierz instalator Node.js (który zawiera npm) ze strony [oficjalnej Node.js](https://nodejs.org/).
+2. Uruchom pobrany plik instalacyjny i postępuj zgodnie z instrukcjami na ekranie. Instalator automatycznie doda Node.js i npm do zmiennej środowiskowej `PATH`.
+3. Po zakończeniu instalacji otwórz wiersz poleceń i wpisz `npm -v`, aby sprawdzić, czy npm został prawidłowo zainstalowany.
+
+### Linux (Debian/Ubuntu)
+
+1. Aby zainstalować Node.js i npm za pomocą menedżera pakietów, otwórz terminal i wykonaj następujące polecenia: `sudo apt update`, `sudo apt install nodejs npm`
+2. Po zakończeniu instalacji, sprawdź wersję npm, aby potwierdzić, że instalacja przebiegła pomyślnie: `npm -v`
+
+
+### macOS
+
+1. Najprostszym sposobem na zainstalowanie Node.js i npm na macOS jest użycie Homebrew. Jeśli nie masz Homebrew, zainstaluj go zgodnie z instrukcjami na [brew.sh](https://brew.sh/).
+2. Zainstaluj Node.js (zawierający npm) za pomocą Homebrew: `brew install node`
+3. Po instalacji sprawdź wersję npm: `npm -v`
+
+# Uruchomienie projektu
+
+Aby uruchomić projekt, wykonaj następujące kroki:
+
+1. Sklonuj repozytorium przy użyciu poniższej komendy: `git clone <URL_REPOZYTORIUM>` Zastąp `<URL_REPOZYTORIUM>` rzeczywistym adresem URL repozytorium.)
+2. Otwórz terminal i przejdź do folderu `frontend`. Zainstaluj zależności projektu za pomocą komendy: `npm install`
+3. Następnie otwórz nowe okno terminala i przejdź do folderu `backend`. Zbuduj projekt przy użyciu Mavena: `mvn clean install`
+4. Aby uruchomić frontend, w terminalu w folderze `frontend` wpisz komendę: `npm start` Spowoduje to uruchomienie strony na `localhost:3030`.
+5. Aby uruchomić backend, w terminalu w folderze `backend` wpisz komendę: `mvn spring-boot:run`
+
+Po wykonaniu powyższych kroków aplikacja powinna działać. Pamiętaj o następujących rzeczach:
+- Aby zobaczyć efekt wprowadzonych zmian w frontendzie, wystarczy zapisać projekt. Zmiany zostaną automatycznie odświeżone.
+- Aby zobaczyć efekt wprowadzonych zmian w backendzie, może być konieczne zrestartowanie serwera.
+
 
 # Zadanie 1
 ### Pobieranie tasków z bazy danych
