@@ -15,7 +15,7 @@ Ten tutorial pokaże, jak zainstalować i skonfigurować PostgreSQL na systemach
 3. Wybierz komponenty do instalacji. Zazwyczaj wystarczy serwer bazy danych i narzędzia komend.
 4. Zaznacz odpowiednią lokalizację instalacji.
 5. Wybierz port (domyślnie 5432) i hasło dla superużytkownika `postgres`.
-6. Zakończ instalację i sprawdz czy serwer działa poprzez nacisniecie 'Win + R' i wpisanie services.msc. Jeśli istnieje usługa o nazwe postgresql-x64 oraz jest aktywna.
+6. Zakończ instalację i sprawdz czy serwer działa poprzez nacisniecie 'Win + R' i wpisanie services.msc. Jeśli istnieje usługa o nazwe postgresql-x64 oraz jest aktywna oznacza, że serwer działa.
 7. Pomiń instalacje stackbuildera, nie jest on nam potrzebny.
 
 ### Linux (Debian/Ubuntu)
