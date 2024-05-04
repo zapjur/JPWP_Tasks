@@ -15,7 +15,8 @@ Ten tutorial pokaże, jak zainstalować i skonfigurować PostgreSQL na systemach
 3. Wybierz komponenty do instalacji. Zazwyczaj wystarczy serwer bazy danych i narzędzia komend.
 4. Zaznacz odpowiednią lokalizację instalacji.
 5. Wybierz port (domyślnie 5432) i hasło dla superużytkownika `postgres`.
-6. Zakończ instalację i upewnij się, że serwer bazy danych jest uruchomiony.
+6. Zakończ instalację i sprawdz czy serwer działa poprzez nacisniecie 'Win + R' i wpisanie services.msc. Jeśli istnieje usługa o nazwe postgresql-x64 oraz jest aktywna.
+7. Pomiń instalacje stackbuildera, nie jest on nam potrzebny.
 
 ### Linux (Debian/Ubuntu)
 
@@ -73,6 +74,8 @@ Apache Maven to narzędzie do zarządzania projektem i zrozumienia jego cyklu ż
    - Kliknij `Zaawansowane ustawienia systemu`, następnie `Zmienne środowiskowe`.
    - W sekcji `Zmienne systemowe` znajdź i edytuj `PATH`, dodając ścieżkę do katalogu `bin` Mavena.
 
+[Poradnik krop po kroku](https://phoenixnap.com/kb/install-maven-windows)
+
 ### Linux (Debian/Ubuntu)
 
 1. Maven można zainstalować za pomocą menedżera pakietów: `sudo apt update`, `sudo apt install maven`
@@ -95,7 +98,9 @@ Npm to menedżer pakietów dla języka programowania JavaScript, który jest dom
 
 1. Pobierz instalator Node.js (który zawiera npm) ze strony [oficjalnej Node.js](https://nodejs.org/).
 2. Uruchom pobrany plik instalacyjny i postępuj zgodnie z instrukcjami na ekranie. Instalator automatycznie doda Node.js i npm do zmiennej środowiskowej `PATH`.
-3. Po zakończeniu instalacji otwórz wiersz poleceń i wpisz `npm -v`, aby sprawdzić, czy npm został prawidłowo zainstalowany.
+3. Po zakończeniu instalacji otwórz wiersz poleceń i wpisz `npm -v` oraz `node -v`, aby sprawdzić, czy npm i node zostały prawidłowo zainstalowane.
+
+[Poradnik krok po kroku](https://phoenixnap.com/kb/install-node-js-npm-on-windows)
 
 ### Linux (Debian/Ubuntu)
 
