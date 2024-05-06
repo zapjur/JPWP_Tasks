@@ -44,7 +44,8 @@ Ten tutorial pokaże, jak zainstalować i skonfigurować PostgreSQL na systemach
   ```psql -U postgres```.
   
   ### Jeśli komenda nie zadziała
-  - W sekcji `Zmienne środowiskowe` znajdz i edytuj `PATH`, dodając ścieżkę do katalogu `bin` postgreSql. (Przykładowa ścieżka: "C:\Program Files\PostgreSQL\version\bin")  
+  - W sekcji `Zmienne środowiskowe` znajdz i edytuj `PATH`, dodając ścieżkę do katalogu `bin` postgreSql.
+    (Przykładowa ścieżka: "C:\Program Files\PostgreSQL\version\bin")  
    
   
 - Na Linux: 
